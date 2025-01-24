@@ -47,7 +47,8 @@ RadioButtonSettingsEditor::RadioButtonSettingsEditor(QWidget *parent)
 
     layout->setAlignment(Qt::AlignCenter);
 
-    layout->setMargin(0);
+    //layout->setMargin(0);  qt5
+    layout->setContentsMargins(0, 0, 0, 0); //qt6
     layout->setSpacing(0);
 
     setupForm();
