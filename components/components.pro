@@ -1,3 +1,4 @@
+QT += core gui widgets statemachine
 TEMPLATE = lib
 CONFIG += staticlib
 SOURCES = \
