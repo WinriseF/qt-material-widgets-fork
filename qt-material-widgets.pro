@@ -1,10 +1,12 @@
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
-
+# QT += core gui widgets statemachine
 TARGET = qt-material-widgets
 TEMPLATE = subdirs
 SUBDIRS = components examples
-CONFIG += ordered
+# CONFIG += ordered
 
+CONFIG += ordered recursive
+QT += core gui widgets statemachine
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which as been marked as deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
