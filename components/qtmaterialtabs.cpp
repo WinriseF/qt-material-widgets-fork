@@ -29,11 +29,12 @@ void QtMaterialTabsPrivate::QtMaterialTabsPrivate::init()
     showHalo       = true;
     useThemeColors = true;
 
-    q->setLayout(tabLayout);
+    q->setLayout(tabLayout);  
     q->setStyle(&QtMaterialStyle::instance());
 
     tabLayout->setSpacing(0);
-    tabLayout->setMargin(0);
+    //tabLayout->setMargin(0);  //qt5
+    tabLayout->setContentsMargins(0, 0, 0, 0);  //qt6
 }
 
 /*!
