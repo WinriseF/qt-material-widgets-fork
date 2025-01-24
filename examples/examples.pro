@@ -1,3 +1,4 @@
+QT += core gui widgets statemachine
 QT += core gui widgets
 TEMPLATE = app
 CONFIG += c++11
